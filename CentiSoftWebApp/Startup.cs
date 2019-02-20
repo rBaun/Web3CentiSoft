@@ -54,6 +54,9 @@ namespace CentiSoftWebApp
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "client",
+                    template: "{controller=Client}/{action=ClientDetails}/{id?}");
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });

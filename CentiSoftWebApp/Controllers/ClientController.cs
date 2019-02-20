@@ -10,14 +10,14 @@ using Microsoft.Extensions.Configuration;
 
 namespace CentiSoftWebApp.Controllers
 {
-    public class HomeController : Controller
+    public class ClientController : Controller
     {
-        public HomeController(IConfiguration config)
+        public ClientController(IConfiguration config)
         {
             Client.configuration = config;
         }
 
-        public IActionResult Index(int id)
+        public IActionResult ClientDetails(int id)
         {
             Client.GetClient(id);
             ClientViewModel client = new ClientViewModel();
@@ -26,25 +26,6 @@ namespace CentiSoftWebApp.Controllers
             client.Token = Client.Token;
 
             return View(client);
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
