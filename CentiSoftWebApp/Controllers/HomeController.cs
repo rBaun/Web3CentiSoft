@@ -5,14 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CentiSoftWebApp.Models;
+using DataAccessLayer;
 
 namespace CentiSoftWebApp.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+
+        public IActionResult Index(int id)
         {
-            return View();
+            Client.GetClient(id);
+            ClientViewModel client = new ClientViewModel();
+            client.Id = Client.Id;
+            client.Name = Client.Name;
+            client.Token = Client.Token;
+
+            return View(client);
         }
 
         public IActionResult About()
