@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CentiSoftWebApp.Models;
 using DataAccessLayer;
+using Microsoft.Extensions.Configuration;
 
 namespace CentiSoftWebApp.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController(IConfiguration config)
+        {
+            Client.configuration = config;
+        }
 
         public IActionResult Index(int id)
         {

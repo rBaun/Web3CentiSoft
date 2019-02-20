@@ -7,12 +7,17 @@ namespace DataAccessLayer
 {
     public class Client
     {
-        private static readonly IConfiguration configuration;
-        private static string connectionString = configuration.GetConnectionString("DefaultConnectionString");
+        public static IConfiguration configuration;
+        private static string connectionString;
         public static int Id { get; set; }
         public static string Name { get; set; }
         public static string Token { get; set; }
         public static List<Customer> Customers { get; set; }
+
+        public Client()
+        {
+            connectionString = configuration.GetConnectionString("DefaultConnectionString");
+        }
 
         public static void SaveClient()
         {
