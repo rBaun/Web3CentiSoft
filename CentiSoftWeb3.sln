@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CentiSoftWebApp", "CentiSof
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentiSoft", "CentiSoft\CentiSoft.csproj", "{854C31D7-A431-43FC-9E5C-F4386015994F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentisoftREST", "..\..\..\..\Desktop\CentiSoft\CentiSoft\CentisoftREST.csproj", "{C07AC25C-0A22-4D0D-90C2-B4592F95DEEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{854C31D7-A431-43FC-9E5C-F4386015994F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{854C31D7-A431-43FC-9E5C-F4386015994F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{854C31D7-A431-43FC-9E5C-F4386015994F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07AC25C-0A22-4D0D-90C2-B4592F95DEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07AC25C-0A22-4D0D-90C2-B4592F95DEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07AC25C-0A22-4D0D-90C2-B4592F95DEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07AC25C-0A22-4D0D-90C2-B4592F95DEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
