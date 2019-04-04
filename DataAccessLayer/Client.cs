@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
+
+// Lavinterface repository af client.. Lav en clientRepos klasse som implementere interface
+// i vores action kald metoden fra interface og parse alle elementer til viewmodel
 namespace DataAccessLayer
 {
     public class Client
