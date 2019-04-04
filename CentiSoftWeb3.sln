@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CentiSoftWebApp", "CentiSoftWebApp\CentiSoftWebApp.csproj", "{8FBE993C-0782-419A-9C99-DC409C84658F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentiSoft", "CentiSoft\CentiSoft.csproj", "{854C31D7-A431-43FC-9E5C-F4386015994F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CentiSoft", "CentiSoft\CentiSoft.csproj", "{854C31D7-A431-43FC-9E5C-F4386015994F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentisoftREST", "..\..\..\..\Desktop\CentiSoft\CentiSoft\CentisoftREST.csproj", "{C07AC25C-0A22-4D0D-90C2-B4592F95DEEE}"
 EndProject
