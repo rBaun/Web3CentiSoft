@@ -12,8 +12,8 @@ namespace CentiSoft.DAL {
         IEnumerable<TEntity> GetAll();
         TEntity GetById(int id);
         void Insert(TEntity entity);
-        void Update(TEntity entity);
-        void Delete(int id);
+        bool Update(int id, string name, string email);
+        int Delete(int id);
         void Save();
     }
 }

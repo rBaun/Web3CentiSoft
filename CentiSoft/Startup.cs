@@ -27,6 +27,12 @@ namespace CentiSoft {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
+
+            });
+
+
+            services.AddCors(c => {
+                c.AddPolicy("AllowOrigin", options => options.WithOrigins("http://localhost:57422/").AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
 
             services.AddTransient<IRepository<Developer>>(s => {
@@ -59,7 +65,12 @@ namespace CentiSoft {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                app.UseCors(options => options.AllowAnyOrigin());
+
+
             });
+
+            
         }
     }
 }
